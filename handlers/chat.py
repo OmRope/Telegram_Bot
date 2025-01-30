@@ -8,7 +8,7 @@ from pymongo import MongoClient
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 async def chat_with_gemini(update: Update, context: CallbackContext):
-    user_message = update.message.text  # Get user input
+    user_message = update.message.text  
     chat_id = update.message.chat_id
 
     if not user_message:

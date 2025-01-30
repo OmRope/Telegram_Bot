@@ -4,7 +4,6 @@ from database import get_users_collection
 
 async def start(update: Update, context: CallbackContext) -> None:
     """Handles the /start command and registers the user."""
-    print("START")
     user = update.message.from_user
     chat_id = update.message.chat_id
     users = get_users_collection()
@@ -27,7 +26,6 @@ async def start(update: Update, context: CallbackContext) -> None:
 
 async def handle_contact(update: Update, context: CallbackContext) -> None:
     """Handles phone number collection."""
-    print("HANDLE CONTACT")
     user = update.message.from_user
     chat_id = update.message.chat_id
     contact = update.message.contact

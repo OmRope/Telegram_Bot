@@ -5,6 +5,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 from handlers.registrations import start, handle_contact
 from handlers.chat import chat_with_gemini
 from handlers.image_analysis import analyze_file
+from handlers.translate import translate_text
 from handlers.web_search import web_search
 from handlers.translate import translate_text
 
