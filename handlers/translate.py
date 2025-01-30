@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from deep_translator import GoogleTranslator
 from telegram import Update
 from telegram.ext import CallbackContext
@@ -50,5 +49,4 @@ async def translate_text(update: Update, context: CallbackContext):
         await update.message.reply_text(f"📝 Translated ({lang_code}): {translated_text}")
     except Exception as e:
         print(f"⚠ Translation Error: {e}")  
->>>>>>> 8a4aa61 (Updated feature PDF and Translate)
         await update.message.reply_text("⚠ Sorry, an error occurred while translating.")
